@@ -1,0 +1,548 @@
+/*
+Theme Name: 教育学院
+Theme URI: http://www.turen.me
+Author: 张亮
+Author URI: http://www.turen.me
+Description:天水师范学院教育学院网站主题
+Version: 1.0
+*/
+@import url(pagenavi-css.css);
+body, ul,li,a{
+	border: 0;
+	font-family: "Microsoft YaHei"; Arial sans-serif;
+	font-size: 12px;
+	margin: 0;
+	outline: 0;
+	padding: 0;
+	vertical-align: baseline;
+}
+ul,li,a{
+	list-style: none;
+}
+body{
+	width:100%;
+	background: url(images/bg.png);
+}
+
+a,a:hover{
+	text-decoration: none;
+}
+
+#header {
+	width:980px;
+	text-align: center;
+	margin:0 auto;
+	height: 133px;
+}
+
+#header img {
+	border:none;
+}
+
+/*菜单*/
+#nav {
+	width:100%;
+	height: 50px;
+	background: #685407;
+}
+
+#nav .menu{
+	text-align: center;
+	margin: 0 auto;
+	width: 980px;
+}
+
+#nav #menu-list > li{
+	float: left;
+	line-height: 49px;
+	padding:0 15px;
+}
+
+#nav .menu-item{
+
+}
+
+#nav .menu li a{
+	color: #fff;
+	font-size: 14px;
+}
+#nav .menu li a:hover{
+	text-decoration: underline;
+}
+
+#nav .sub-menu {
+	display: none;
+	 padding: 0 15px; 
+	position:absolute;
+	z-index:100;
+	background:#81610D;
+	float:left;
+	margin-left: -15px;
+}
+#nav #menu-list .sub-menu li{
+	height:29px;
+	line-height:29px;
+	background:#81610D;
+	float:none;
+}
+#nav #menu-list li ul li a{
+	height:29px;
+	line-height:29px;
+	font-weight:normal;
+}
+#nav #menu-list li ul li a:hover{
+	background:#81610D;
+	font-weight:normal;
+	text-decoration: underline;
+}
+
+
+#container {
+	width:980px;
+	margin:0 auto;
+	padding: 20px 15px;
+	min-height: 600px;
+	background: #fff;
+	overflow: hidden;
+}
+/*左侧主要部分*/
+#main{
+	width:660px;
+	float: left;
+}
+
+/*幻灯*/
+#ppt{
+	float: left;
+	width: 660px;
+}
+
+.left,.right{
+	background: url(images/title_bg.png) no-repeat;
+	width:320px;
+	float: left;
+	margin-top: 15px;
+}
+.right{
+	margin-left: 20px;
+}
+.headline{
+	color: #fff;
+	font-size: 14px;
+	line-height: 45px;
+	padding-left: 20px;
+}
+
+.more a {
+	color: #fff;
+	float: right;
+	padding-right: 15px;
+	line-height: 45px;
+}
+.more a:hover {
+	text-decoration: underline;
+}
+
+.post_list {
+	margin: 10px 0;
+}
+.post_list ul li {
+	line-height: 30px;
+	border-bottom: 1px #2a2a2a dotted;
+	list-style: circle;
+	list-style-position: inside;
+}
+
+.post_list a{
+	color: #000;
+}
+
+.post_list a:hover {
+	color: #d67001;
+}
+.post_date{
+	float:right;
+}
+
+/*页脚*/
+.clear{
+	clear:both;
+	margin: 0;
+	padding: 0;
+}
+#footer{
+	clear: both;
+	width:100%;
+	background: #685407;
+	height: 175px;
+	margin:  0 auto;
+	border-top: 5px solid #45331D;
+}
+
+#footer-content {
+	width: 980px;
+	margin: 0 auto;
+	padding-top: 25px;
+}
+
+#link {
+	color:#fff;
+	min-height: 30px;
+	border-bottom: 1px solid #443900;
+}
+#link span {
+	float: left;
+	font-weight: bold;
+}
+
+.link-list {
+}
+.link-list li {
+	float: left;
+	width: auto;
+	padding: 0 15px;
+}
+
+
+.link-list li a {
+	color: #fff;
+}
+.link-list li a:hover{
+	text-decoration: underline;
+}
+
+.copyright {
+	color: #adadad;
+	padding-top: 10px;
+	text-align: right;
+	border-top: #796F05  solid 1px;
+}
+
+.copyright p{
+	line-height: 15px;
+	overflow: hidden;
+}
+
+/*右侧菜单*/ 
+#right-bar{
+	float: right;
+	width:300px;
+	/*background: url(images/right-bg.png) no-repeat bottom right;*/
+}
+
+/*通知公告*/
+#notice,#teacher-album {
+
+	background: url(images/notice_bg.png) no-repeat;
+}
+
+
+
+/* 搜索 */
+.searchform{
+	/*margin-top:25px;*/
+	height: 40px;
+}
+
+.searchform div {
+	width: 300px;
+	height: 34px;
+	overflow: hidden;
+	background: url(images/search_bg.png) no-repeat;
+	/*margin: 20px auto;*/
+}
+
+.inputtext {
+	text-indent: 10px;
+	color: #434343;
+	line-height: 34px;
+	display: block;
+	width: 260px;
+	height: 34px;
+	overflow: hidden;
+	background: none;
+	border: 1px;
+	float: left;
+}
+
+.btn{
+	background: none;
+	border: 0px;
+	width: 28px;
+	height: 34px;
+
+}
+
+/*教师风采*/
+#teacher-album {
+	margin-top:5px;
+	width: 300px;
+}
+#teacher-album .photo-list{
+	border: 1px solid #cecece;
+	border-radius: 0 0px 5px 5px;
+	overflow: hidden;
+	padding: 15px 0;
+	height: 105px;
+	text-align: center;
+	width: 300px;
+}
+#teacher-album >ul>li {
+	display: block;
+	width: 100px;
+	float: left;
+	text-align: center;
+	padding-bottom: 10px;
+}
+
+.teacher-name{
+	width: inherit;
+	text-align: center;
+	float: left;
+}
+#teacher-album img {
+	border: 1px solid #cecece;
+	padding: 5px;
+	width: 60px;
+	height: 80px;
+}
+
+/*精品课程*/ 
+.class{
+	margin: 10px auto;
+}
+
+.class span {
+	display: block;
+	width: 300px;
+	height: 45px;
+	line-height: 45px;
+	border-radius: 5px;
+	margin-top: 5px;
+	background: url(images/class2.png) no-repeat;
+	text-align: center;
+	color: #fff;
+	font-size: 14px;
+}
+/*左侧菜单*/
+
+#sidebar-left{
+	width: 220px;
+	min-height: 460px;
+	float: left;
+	background: url(images/left-bg.png) no-repeat; 
+	text-align: center;
+	padding-top: 50px;
+	border-radius: 5px;
+}
+
+.menu-left a{
+	color: #685407;
+	font-weight: bold;
+	text-align: left;
+}
+
+.menu-left a:hover{
+	text-decoration: underline;
+	text-align: left;
+}
+
+.menu-left ul li {
+	padding: 0;
+	margin: 0;
+	text-align: center;
+	width: 180px;
+	margin-top:15px;
+}
+
+.menu-left .menu-item{
+	display: none;
+	float: left;
+	line-height: 25px;
+	text-align: center;
+}
+
+.menu-left .current-menu-parent
+,.menu-left .current-post-parent
+,.menu-left .current-menu-item
+,.menu-left .menu-item-has-children .sub-menu {
+	display: block;
+	text-align: center;
+	width: 220px;
+}
+.menu-left .sub-menu li {
+	width: 220px;
+	text-align: center;
+}
+.menu-left .menu-item-has-children .sub-menu .menu-item{
+	display: block;
+	float: none;
+}
+
+.menu-left .menu-item-has-children{
+	/*display: block;*/
+	border: none;
+}
+
+.menu-left .current-post-ancestor {
+	display: block;
+}
+
+
+#main-content{
+	margin-left: 20px;
+	width: 740px;
+	float: right;
+}
+
+/* 
+#main-content p{
+	line-height: 30px;
+	} */
+
+	#position{
+		height: 32px;
+		line-height: 32px;
+		border-radius: 5px;
+		color: #000;
+		padding-left: 5px;
+		border: 1px solid #EEE;
+	}
+
+	#position a {
+		color: #000;
+	}
+	#position a:hover{
+		text-decoration: underline;
+	}
+	.icon-home {
+		height: 32px;
+		background: url(images/home-b.png) no-repeat center left;
+		background-size: 16px 16px;
+		padding-left: 18px;
+	}
+
+	.content-box{
+		padding: 20px  20px 0px 20px;
+	}
+
+	.content-box >p {
+		line-height: 30px;
+		text-indent: 2em;
+	}
+
+	.post-title , .post-info{
+		margin: 0 auto;
+		text-align: center;
+		margin-bottom: 15px;
+		display: block;
+	}
+
+	.post-title {
+		font-size: 18px;
+	}
+
+
+	.padding-r-20 {
+		padding-right: 20px;
+	}
+
+	.aligncenter{
+		margin: 0 auto;
+	}
+
+	/* Responsive images */
+	.entry-content img,
+	.comment-content img,
+	.widget img {
+		max-width: 100%; /* Fluid images for posts, comments, and widgets */
+	}
+	img[class*="align"],
+	img[class*="wp-image-"],
+	img[class*="attachment-"] {
+		height: auto; /* Make sure images with WordPress-added height and width attributes are scaled correctly */
+	}
+	img.size-full,
+	img.size-large,
+	img.header-image,
+	img.wp-post-image {
+		max-width: 100%;
+		height: auto; /* Make sure images with WordPress-added height and width attributes are scaled correctly */
+	}
+	/* Images */
+	.alignleft {
+		float: left;
+	}
+	.alignright {
+		float: right;
+	}
+	.aligncenter {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.entry-content img,
+	.comment-content img,
+	.widget img,
+	img.header-image,
+	.author-avatar img,
+	img.wp-post-image {
+		/* Add fancy borders to all WordPress-added images but not things like badges and icons and the like */
+		border-radius: 3px;
+		box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+	}
+	.wp-caption {
+		max-width: 100%; /* Keep wide captions from overflowing their container. */
+		padding: 4px;
+	}
+	.wp-caption .wp-caption-text,
+	.gallery-caption,
+	.entry-caption {
+		font-style: italic;
+		font-size: 12px;
+		font-size: 0.857142857rem;
+		line-height: 2;
+		color: #757575;
+	}
+	img.wp-smiley,
+	.rsswidget img {
+		border: 0;
+		border-radius: 0;
+		box-shadow: none;
+		margin-bottom: 0;
+		margin-top: 0;
+		padding: 0;
+	}
+	.entry-content dl.gallery-item {
+		margin: 0;
+	}
+	.gallery-item a,
+	.gallery-caption {
+		width: 90%;
+	}
+	.gallery-item a {
+		display: block;
+	}
+	.gallery-caption a {
+		display: inline;
+	}
+	.gallery-columns-1 .gallery-item a {
+		max-width: 100%;
+		width: auto;
+	}
+	.gallery .gallery-icon img {
+		height: auto;
+		max-width: 90%;
+		padding: 5%;
+	}
+	.gallery-columns-1 .gallery-icon img {
+		padding: 3%;
+	}
+
+	.banner {
+		height: 75px;
+		margin-top:5px;
+		border-radius: 5px;
+		width: 300px;
+	}
+
